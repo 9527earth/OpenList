@@ -1,1 +1,6 @@
-
+{
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "OpenList"
+}
