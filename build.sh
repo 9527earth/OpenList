@@ -64,6 +64,7 @@ FetchWebDev() {
   curl -fsSL "$pre_release_tar_url" -o web-dist-dev.tar.gz
   rm -rf public/dist && mkdir -p public/dist
   tar -zxvf web-dist-dev.tar.gz -C public/dist
+  mv -f public/manifest.json public/dist/static
   rm -rf web-dist-dev.tar.gz
 }
 
@@ -80,6 +81,7 @@ FetchWebRelease() {
   curl -fsSL "$release_tar_url" -o dist.tar.gz
   rm -rf public/dist && mkdir -p public/dist
   tar -zxvf dist.tar.gz -C public/dist
+  mv -f public/manifest.json public/dist/static
   rm -rf dist.tar.gz
 }
 
