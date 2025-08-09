@@ -18,6 +18,7 @@ jobs:
           - darwin-arm64
           - windows-amd64
           - linux-arm64-musl
+          - linux-arm64-musl-lite
           - linux-amd64-musl
           - windows-arm64
           - android-arm64
