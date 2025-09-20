@@ -204,8 +204,7 @@ do:
 		"authorization": "Bearer " + d.AccessToken,
 		"user-agent":    "123pan/v2.6.1(Android_14.0.0;Xiaomi)",
 		"platform":      "android",
-		"app-version":   "90",
-		//"x-app-version": "2.6.1"
+		"app-version":   "90"
 	})
 	if callback != nil {
 		callback(req)
