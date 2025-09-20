@@ -202,10 +202,10 @@ do:
 		"origin":        "https://www.123pan.com",
 		"referer":       "https://www.123pan.com/",
 		"authorization": "Bearer " + d.AccessToken,
-		"user-agent":    "123pan/v2.6.0(Android_14.0.0;Xiaomi)",
+		"user-agent":    "123pan/v2.6.4(Android_14.0.0;Xiaomi)",
 		"platform":      "android",
-		"app-version":   "89",
-		"x-app-version": "2.6.0",
+		"app-version":   "93",
+		"x-app-version": "2.6.4"
 	})
 	if callback != nil {
 		callback(req)
