@@ -164,7 +164,7 @@ func (d *Pan123) login() error {
 			"Host":        "login.123pan.com",
 			"origin":      "https://login.123pan.com",
 			"referer":     "https://login.123pan.com/centerlogin",
-			"user-agent":  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+			"user-agent":  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
 			"platform":    "web",
 			"app-version": "3",
 			//"user-agent":  base.UserAgent,
@@ -205,7 +205,7 @@ do:
 		"authorization": "Bearer " + d.AccessToken,
 		"user-agent":    "123pan/v3.1.0(Android_14.0.0;Xiaomi)",
 		"platform":      "android"，
-		"app-version":   "3",
+		"app-version":   "310",
 		//"user-agent":    base.UserAgent,
 	})
 	if callback != nil {
