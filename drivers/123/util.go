@@ -161,9 +161,10 @@ func (d *Pan123) login() error {
 	}
 	res, err := base.RestyClient.R().
 		SetHeaders(map[string]string{
-			"origin":      "https://www.123pan.com",
-			"referer":     "https://www.123pan.com/",
-			"user-agent":  "Dart/2.19(dart:io)-openlist",
+			"Host":        "login.123pan.com",
+			"origin":      "https://login.123pan.com",
+			"referer":     "https://login.123pan.com/centerlogin",
+			"user-agent":  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
 			"platform":    "web",
 			"app-version": "3",
 			//"user-agent":  base.UserAgent,
@@ -202,8 +203,8 @@ do:
 		"origin":        "https://www.123pan.com",
 		"referer":       "https://www.123pan.com/",
 		"authorization": "Bearer " + d.AccessToken,
-		"user-agent":    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) openlist-client",
-		"platform":      d.Platform,
+		"user-agent":    "123pan/v3.1.0(Android_14.0.0;Xiaomi)",
+		"platform":      "android"，
 		"app-version":   "3",
 		//"user-agent":    base.UserAgent,
 	})
